@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		780589FA2C83A19800D2CB81 /* ApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780589F92C83A18B00D2CB81 /* ApiView.swift */; };
+		780589FA2C83A19800D2CB81 /* OpenApiTestView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780589F92C83A18B00D2CB81 /* OpenApiTestView.swift */; };
 		782FA7922C83971B00402D82 /* SwiftUI_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FA7912C83971B00402D82 /* SwiftUI_DemoApp.swift */; };
 		782FA7942C83971B00402D82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FA7932C83971B00402D82 /* ContentView.swift */; };
 		782FA7962C83972200402D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782FA7952C83972200402D82 /* Assets.xcassets */; };
@@ -33,7 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		780589F92C83A18B00D2CB81 /* ApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiView.swift; sourceTree = "<group>"; };
+		780589F92C83A18B00D2CB81 /* OpenApiTestView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenApiTestView.swift; sourceTree = "<group>"; };
 		780589FC2C83A2AA00D2CB81 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		782FA78E2C83971B00402D82 /* SwiftUI-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		782FA7912C83971B00402D82 /* SwiftUI_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_DemoApp.swift; sourceTree = "<group>"; };
@@ -55,6 +55,7 @@
 		786902F22C839A2D0032C78D /* StyleModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleModifiers.swift; sourceTree = "<group>"; };
 		786902F32C839A2D0032C78D /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		786902F42C839A2D0032C78D /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		78ADFD5D2C83B17E000CC604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +93,7 @@
 		782FA7902C83971B00402D82 /* SwiftUI-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				78ADFD5D2C83B17E000CC604 /* Info.plist */,
 				786902DC2C8399F70032C78D /* API */,
 				786902DE2C8399F70032C78D /* Assets */,
 				786902E22C8399F70032C78D /* Model */,
@@ -106,7 +108,7 @@
 				786902EF2C839A2D0032C78D /* GradientView.swift */,
 				786902EA2C839A2D0032C78D /* HomeView.swift */,
 				786902E92C839A2D0032C78D /* MainContentView.swift */,
-				780589F92C83A18B00D2CB81 /* ApiView.swift */,
+				780589F92C83A18B00D2CB81 /* OpenApiTestView.swift */,
 				782FA7952C83972200402D82 /* Assets.xcassets */,
 				782FA7972C83972200402D82 /* Preview Content */,
 			);
@@ -237,7 +239,7 @@
 				786902FF2C839A2D0032C78D /* SplashView.swift in Sources */,
 				786902E82C8399F70032C78D /* Model.swift in Sources */,
 				786902F62C839A2D0032C78D /* HomeView.swift in Sources */,
-				780589FA2C83A19800D2CB81 /* ApiView.swift in Sources */,
+				780589FA2C83A19800D2CB81 /* OpenApiTestView.swift in Sources */,
 				786902FB2C839A2D0032C78D /* GradientView.swift in Sources */,
 				786902FE2C839A2D0032C78D /* StyleModifiers.swift in Sources */,
 				786902E72C8399F70032C78D /* Item.swift in Sources */,
@@ -391,6 +393,8 @@
 				DEVELOPMENT_TEAM = FPL5896D45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Demo/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = NSAllowsArbitraryLoads;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -420,6 +424,8 @@
 				DEVELOPMENT_TEAM = FPL5896D45;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "SwiftUI-Demo/Info.plist";
+				INFOPLIST_KEY_LSApplicationCategoryType = NSAllowsArbitraryLoads;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

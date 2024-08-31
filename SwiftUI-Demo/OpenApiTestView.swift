@@ -29,7 +29,7 @@ import OpenAPIURLSession
 /// By default, it makes live network calls, but it can be provided
 /// with `MockClient` to make mocked in-memory calls only, which is more
 /// appropriate in previews and tests.
-struct ApiView: View {
+struct OpenApiTestView: View {
     @State private var greeting: String = "Hello, Stranger!"
     @State private var name: String = "Stranger"
     let client: any APIProtocol
@@ -43,7 +43,7 @@ struct ApiView: View {
         } else {
             // By default, make live network calls.
             self.init(
-                client: Client(serverURL: URL(string: "http://localhost:8080/api")!, transport: URLSessionTransport())
+                client: Client(serverURL: URL(string: "http://127.0.0.1:8080/api")!, transport: URLSessionTransport())
             )
         }
     }
@@ -60,6 +60,16 @@ struct ApiView: View {
             Divider()
             TextField("Name", text: $name)
             Button("Refresh greeting") { Task { await updateGreeting() } }
+
+            Divider()
+            Text("To test, the server endpoint needs to be available at [http://127.0.0.1:8080/api](http://127.0.0.1:8080).")
+                .font(.footnote)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
+            Text("You can use the server code here, it is made with Vapor: [link](https://github.com/apple/swift-openapi-generator/tree/main/Examples/hello-world-vapor-server-example)")
+                .font(.footnote)
+                .frame(maxWidth: .infinity, alignment: .leading)
+
         }
         .padding().buttonStyle(.borderedProminent).font(.system(size: 20))
     }
@@ -75,5 +85,5 @@ struct MockClient: APIProtocol {
 
 #Preview {
     // Use the mock client in previews instead of live network calls.
-    ApiView(client: MockClient())
+    OpenApiTestView(client: MockClient())
 }
