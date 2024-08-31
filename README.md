@@ -5,11 +5,12 @@
 
 
 ## Packages - using the Swift package manager
+
+Note: there is an issue with the Xcode 16 beta & resolving packages, I needed to create the project in Xcode 15 as a work around.  The project will work in Xcode 16.
  
  ### Rive
  
 - the splash scene is using a demo animation made with [Rive](https://www.rive.app)
-- Rive has been added using the Swift Package Manager
 
 ### Open API generator
 
