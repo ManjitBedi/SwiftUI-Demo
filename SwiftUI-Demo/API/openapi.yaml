@@ -1,42 +1,36 @@
-openapi: "3.0.3"
+openapi: '3.1.0'
 info:
-  title: "PostService"
-  version: "1.0.0"
+  title: GreetingService
+  version: 1.0.0
 servers:
-  - url: "https://jsonplaceholder.typicode.com"
-    description: "An endpoint to get various objects"
+  - url: https://example.com/api
+    description: Example service deployment.
 paths:
-  /posts:
+  /greet:
     get:
-      operationId: "getPosts"
+      operationId: getGreeting
+      parameters:
+        - name: name
+          required: false
+          in: query
+          description: The name used in the returned greeting.
+          schema:
+            type: string
       responses:
-        "200":
-          description: "Returns an array of post objects"
+        '200':
+          description: A success response with a greeting.
           content:
             application/json:
               schema:
-                type: array
-                items:
-                  $ref: "#/components/schemas/Post"
+                $ref: '#/components/schemas/Greeting'
 components:
   schemas:
-    Post:
+    Greeting:
       type: object
-      required:
-        - userId
-        - id
-        - title
-        - body
+      description: A value with the greeting contents.
       properties:
-        userId:
-          type: integer
-          example: 1
-        id:
-          type: integer
-          example: 1
-        title:
+        message:
           type: string
-          example: "title ipsum"
-        body:
-          type: string
-          example: "body ipsum"
+          description: The string representation of the greeting.
+      required:
+        - message

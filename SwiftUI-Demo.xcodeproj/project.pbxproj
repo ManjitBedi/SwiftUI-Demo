@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		780589FA2C83A19800D2CB81 /* ApiView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 780589F92C83A18B00D2CB81 /* ApiView.swift */; };
 		782FA7922C83971B00402D82 /* SwiftUI_DemoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FA7912C83971B00402D82 /* SwiftUI_DemoApp.swift */; };
 		782FA7942C83971B00402D82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FA7932C83971B00402D82 /* ContentView.swift */; };
 		782FA7962C83972200402D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782FA7952C83972200402D82 /* Assets.xcassets */; };
@@ -32,6 +33,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		780589F92C83A18B00D2CB81 /* ApiView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiView.swift; sourceTree = "<group>"; };
 		782FA78E2C83971B00402D82 /* SwiftUI-Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Demo.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		782FA7912C83971B00402D82 /* SwiftUI_DemoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_DemoApp.swift; sourceTree = "<group>"; };
 		782FA7932C83971B00402D82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -46,10 +48,8 @@
 		786902E92C839A2D0032C78D /* MainContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
 		786902EA2C839A2D0032C78D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
 		786902EB2C839A2D0032C78D /* ApiContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiContentView.swift; sourceTree = "<group>"; };
-		786902EC2C839A2D0032C78D /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
 		786902ED2C839A2D0032C78D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		786902EF2C839A2D0032C78D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
-		786902F02C839A2D0032C78D /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 		786902F12C839A2D0032C78D /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
 		786902F22C839A2D0032C78D /* StyleModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleModifiers.swift; sourceTree = "<group>"; };
 		786902F32C839A2D0032C78D /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
@@ -104,8 +104,7 @@
 				786902EF2C839A2D0032C78D /* GradientView.swift */,
 				786902EA2C839A2D0032C78D /* HomeView.swift */,
 				786902E92C839A2D0032C78D /* MainContentView.swift */,
-				786902EC2C839A2D0032C78D /* UserView.swift */,
-				786902F02C839A2D0032C78D /* WebService.swift */,
+				780589F92C83A18B00D2CB81 /* ApiView.swift */,
 				782FA7952C83972200402D82 /* Assets.xcassets */,
 				782FA7972C83972200402D82 /* Preview Content */,
 			);
@@ -236,6 +235,7 @@
 				786902FF2C839A2D0032C78D /* SplashView.swift in Sources */,
 				786902E82C8399F70032C78D /* Model.swift in Sources */,
 				786902F62C839A2D0032C78D /* HomeView.swift in Sources */,
+				780589FA2C83A19800D2CB81 /* ApiView.swift in Sources */,
 				786902FB2C839A2D0032C78D /* GradientView.swift in Sources */,
 				786902FE2C839A2D0032C78D /* StyleModifiers.swift in Sources */,
 				786902E72C8399F70032C78D /* Item.swift in Sources */,
