@@ -39,4 +39,4 @@ components:
           example: "title ipsum"
         body:
           type: string
-          example: "body ipsum
+          example: "body ipsum"

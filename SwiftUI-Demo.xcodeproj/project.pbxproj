@@ -161,6 +161,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				780589F52C83A08900D2CB81 /* PBXTargetDependency */,
 			);
 			name = "SwiftUI-Demo";
 			packageProductDependencies = (
@@ -249,6 +250,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		780589F52C83A08900D2CB81 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = 780589F42C83A08900D2CB81 /* OpenAPIGenerator */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		782FA79A2C83972200402D82 /* Debug */ = {
@@ -487,6 +495,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		780589F42C83A08900D2CB81 /* OpenAPIGenerator */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 786903042C839A500032C78D /* XCRemoteSwiftPackageReference "swift-openapi-generator" */;
+			productName = "plugin:OpenAPIGenerator";
+		};
 		786903022C839A3B0032C78D /* RiveRuntime */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 786903012C839A3B0032C78D /* XCRemoteSwiftPackageReference "rive-ios" */;

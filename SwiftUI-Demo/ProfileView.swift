@@ -10,7 +10,7 @@ import SwiftUI
 struct ProfileView: View {
     var body: some View {
         ZStack() {
-            GradientView(colors: [.pink, .blue])
+            GradientView(colors: [.pink, .white])
 
             VStack() {
                 HStack() {
