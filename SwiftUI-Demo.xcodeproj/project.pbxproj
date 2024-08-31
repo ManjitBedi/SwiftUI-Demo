@@ -11,6 +11,24 @@
 		782FA7942C83971B00402D82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FA7932C83971B00402D82 /* ContentView.swift */; };
 		782FA7962C83972200402D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782FA7952C83972200402D82 /* Assets.xcassets */; };
 		782FA7992C83972200402D82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782FA7982C83972200402D82 /* Preview Assets.xcassets */; };
+		786902E32C8399F70032C78D /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 786902DA2C8399F70032C78D /* openapi-generator-config.yaml */; };
+		786902E42C8399F70032C78D /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 786902DB2C8399F70032C78D /* openapi.yaml */; };
+		786902E52C8399F70032C78D /* logo.riv in Resources */ = {isa = PBXBuildFile; fileRef = 786902DD2C8399F70032C78D /* logo.riv */; };
+		786902E62C8399F70032C78D /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902DF2C8399F70032C78D /* Card.swift */; };
+		786902E72C8399F70032C78D /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902E02C8399F70032C78D /* Item.swift */; };
+		786902E82C8399F70032C78D /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902E12C8399F70032C78D /* Model.swift */; };
+		786902F52C839A2D0032C78D /* MainContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902E92C839A2D0032C78D /* MainContentView.swift */; };
+		786902F62C839A2D0032C78D /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902EA2C839A2D0032C78D /* HomeView.swift */; };
+		786902F92C839A2D0032C78D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902ED2C839A2D0032C78D /* CardView.swift */; };
+		786902FB2C839A2D0032C78D /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902EF2C839A2D0032C78D /* GradientView.swift */; };
+		786902FD2C839A2D0032C78D /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902F12C839A2D0032C78D /* SettingsView.swift */; };
+		786902FE2C839A2D0032C78D /* StyleModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902F22C839A2D0032C78D /* StyleModifiers.swift */; };
+		786902FF2C839A2D0032C78D /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902F32C839A2D0032C78D /* SplashView.swift */; };
+		786903002C839A2D0032C78D /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 786902F42C839A2D0032C78D /* ProfileView.swift */; };
+		786903032C839A3B0032C78D /* RiveRuntime in Frameworks */ = {isa = PBXBuildFile; productRef = 786903022C839A3B0032C78D /* RiveRuntime */; };
+		786903092C839A570032C78D /* HTTPTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 786903082C839A570032C78D /* HTTPTypes */; };
+		7869030B2C839A570032C78D /* HTTPTypesFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 7869030A2C839A570032C78D /* HTTPTypesFoundation */; };
+		7869030E2C839BCD0032C78D /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 7869030D2C839BCD0032C78D /* OpenAPIURLSession */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +37,23 @@
 		782FA7932C83971B00402D82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		782FA7952C83972200402D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782FA7982C83972200402D82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		786902DA2C8399F70032C78D /* openapi-generator-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
+		786902DB2C8399F70032C78D /* openapi.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
+		786902DD2C8399F70032C78D /* logo.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = logo.riv; sourceTree = "<group>"; };
+		786902DF2C8399F70032C78D /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		786902E02C8399F70032C78D /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		786902E12C8399F70032C78D /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		786902E92C839A2D0032C78D /* MainContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainContentView.swift; sourceTree = "<group>"; };
+		786902EA2C839A2D0032C78D /* HomeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		786902EB2C839A2D0032C78D /* ApiContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiContentView.swift; sourceTree = "<group>"; };
+		786902EC2C839A2D0032C78D /* UserView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		786902ED2C839A2D0032C78D /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		786902EF2C839A2D0032C78D /* GradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		786902F02C839A2D0032C78D /* WebService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		786902F12C839A2D0032C78D /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		786902F22C839A2D0032C78D /* StyleModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleModifiers.swift; sourceTree = "<group>"; };
+		786902F32C839A2D0032C78D /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
+		786902F42C839A2D0032C78D /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +61,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7869030E2C839BCD0032C78D /* OpenAPIURLSession in Frameworks */,
+				786903092C839A570032C78D /* HTTPTypes in Frameworks */,
+				786903032C839A3B0032C78D /* RiveRuntime in Frameworks */,
+				7869030B2C839A570032C78D /* HTTPTypesFoundation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -51,8 +90,22 @@
 		782FA7902C83971B00402D82 /* SwiftUI-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				786902DC2C8399F70032C78D /* API */,
+				786902DE2C8399F70032C78D /* Assets */,
+				786902E22C8399F70032C78D /* Model */,
+				786902F42C839A2D0032C78D /* ProfileView.swift */,
+				786902F12C839A2D0032C78D /* SettingsView.swift */,
+				786902F32C839A2D0032C78D /* SplashView.swift */,
+				786902F22C839A2D0032C78D /* StyleModifiers.swift */,
 				782FA7912C83971B00402D82 /* SwiftUI_DemoApp.swift */,
 				782FA7932C83971B00402D82 /* ContentView.swift */,
+				786902EB2C839A2D0032C78D /* ApiContentView.swift */,
+				786902ED2C839A2D0032C78D /* CardView.swift */,
+				786902EF2C839A2D0032C78D /* GradientView.swift */,
+				786902EA2C839A2D0032C78D /* HomeView.swift */,
+				786902E92C839A2D0032C78D /* MainContentView.swift */,
+				786902EC2C839A2D0032C78D /* UserView.swift */,
+				786902F02C839A2D0032C78D /* WebService.swift */,
 				782FA7952C83972200402D82 /* Assets.xcassets */,
 				782FA7972C83972200402D82 /* Preview Content */,
 			);
@@ -65,6 +118,33 @@
 				782FA7982C83972200402D82 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		786902DC2C8399F70032C78D /* API */ = {
+			isa = PBXGroup;
+			children = (
+				786902DA2C8399F70032C78D /* openapi-generator-config.yaml */,
+				786902DB2C8399F70032C78D /* openapi.yaml */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		786902DE2C8399F70032C78D /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				786902DD2C8399F70032C78D /* logo.riv */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		786902E22C8399F70032C78D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				786902DF2C8399F70032C78D /* Card.swift */,
+				786902E02C8399F70032C78D /* Item.swift */,
+				786902E12C8399F70032C78D /* Model.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +163,12 @@
 			dependencies = (
 			);
 			name = "SwiftUI-Demo";
+			packageProductDependencies = (
+				786903022C839A3B0032C78D /* RiveRuntime */,
+				786903082C839A570032C78D /* HTTPTypes */,
+				7869030A2C839A570032C78D /* HTTPTypesFoundation */,
+				7869030D2C839BCD0032C78D /* OpenAPIURLSession */,
+			);
 			productName = "SwiftUI-Demo";
 			productReference = 782FA78E2C83971B00402D82 /* SwiftUI-Demo.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +197,12 @@
 				Base,
 			);
 			mainGroup = 782FA7852C83971B00402D82;
+			packageReferences = (
+				786903012C839A3B0032C78D /* XCRemoteSwiftPackageReference "rive-ios" */,
+				786903042C839A500032C78D /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
+				786903072C839A570032C78D /* XCRemoteSwiftPackageReference "swift-http-types" */,
+				7869030C2C839BCD0032C78D /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+			);
 			productRefGroup = 782FA78F2C83971B00402D82 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -126,7 +218,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				782FA7992C83972200402D82 /* Preview Assets.xcassets in Resources */,
+				786902E42C8399F70032C78D /* openapi.yaml in Resources */,
+				786902E52C8399F70032C78D /* logo.riv in Resources */,
 				782FA7962C83972200402D82 /* Assets.xcassets in Resources */,
+				786902E32C8399F70032C78D /* openapi-generator-config.yaml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +232,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				786902FF2C839A2D0032C78D /* SplashView.swift in Sources */,
+				786902E82C8399F70032C78D /* Model.swift in Sources */,
+				786902F62C839A2D0032C78D /* HomeView.swift in Sources */,
+				786902FB2C839A2D0032C78D /* GradientView.swift in Sources */,
+				786902FE2C839A2D0032C78D /* StyleModifiers.swift in Sources */,
+				786902E72C8399F70032C78D /* Item.swift in Sources */,
 				782FA7942C83971B00402D82 /* ContentView.swift in Sources */,
+				786903002C839A2D0032C78D /* ProfileView.swift in Sources */,
+				786902FD2C839A2D0032C78D /* SettingsView.swift in Sources */,
+				786902F92C839A2D0032C78D /* CardView.swift in Sources */,
+				786902E62C8399F70032C78D /* Card.swift in Sources */,
 				782FA7922C83971B00402D82 /* SwiftUI_DemoApp.swift in Sources */,
+				786902F52C839A2D0032C78D /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +450,64 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		786903012C839A3B0032C78D /* XCRemoteSwiftPackageReference "rive-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/rive-app/rive-ios";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.0.7;
+			};
+		};
+		786903042C839A500032C78D /* XCRemoteSwiftPackageReference "swift-openapi-generator" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-generator";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+		786903072C839A570032C78D /* XCRemoteSwiftPackageReference "swift-http-types" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-http-types";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.3.0;
+			};
+		};
+		7869030C2C839BCD0032C78D /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-openapi-urlsession";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		786903022C839A3B0032C78D /* RiveRuntime */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 786903012C839A3B0032C78D /* XCRemoteSwiftPackageReference "rive-ios" */;
+			productName = RiveRuntime;
+		};
+		786903082C839A570032C78D /* HTTPTypes */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 786903072C839A570032C78D /* XCRemoteSwiftPackageReference "swift-http-types" */;
+			productName = HTTPTypes;
+		};
+		7869030A2C839A570032C78D /* HTTPTypesFoundation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 786903072C839A570032C78D /* XCRemoteSwiftPackageReference "swift-http-types" */;
+			productName = HTTPTypesFoundation;
+		};
+		7869030D2C839BCD0032C78D /* OpenAPIURLSession */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 7869030C2C839BCD0032C78D /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
+			productName = OpenAPIURLSession;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 782FA7862C83971B00402D82 /* Project object */;
 }

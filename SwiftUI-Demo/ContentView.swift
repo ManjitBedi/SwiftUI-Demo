@@ -1,21 +1,23 @@
 //
 //  ContentView.swift
-//  SwiftUI-Demo
+//  swiftui-test-area
 //
-//  Created by Manjit Bedi on 2024-08-31.
+//  Created by Manjit Bedi on 2024-08-29.
 //
 
 import SwiftUI
 
 struct ContentView: View {
+    @State private var isShowingSplash = true
+
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        ZStack {
+            if isShowingSplash {
+                SplashView(isShowingSplash: $isShowingSplash)
+            } else {
+                MainContentView()
+            }
         }
-        .padding()
     }
 }
 
