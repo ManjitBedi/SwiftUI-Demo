@@ -16,6 +16,7 @@ Note: there is an issue with the Xcode 16 beta & resolving packages, I needed to
 
 - [Swift OpenAPI Generator](https://github.com/apple/swift-openapi-generator)
 - work in progress
-  - the server end point is using some example code made in Vapor; it works in the simulator but not on a device at the moment, Aug 2024
+  - the server end point is using some example code made in Vapor; it works in the simulator using local host, you need to build and run the Vapor code on your development platform, e.g. a MacBook
+  - to test on an iOS device, I recommend using [ngrok](https://ngrok.com), this will require setting up a developr account
 
 [Link to vapor code on Github](https://github.com/apple/swift-openapi-generator/tree/main/Examples/hello-world-vapor-server-example)

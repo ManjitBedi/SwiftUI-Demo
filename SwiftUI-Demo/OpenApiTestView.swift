@@ -27,7 +27,8 @@ import OpenAPIURLSession
     let urlString = "http://127.0.0.1:8080/api"
 #else
     // TODO: set to the public IP address or alternate server endpoint
-    let urlString = "http://0.0.0.0:8080/api"
+    // I am using ngrok for local testing
+    let urlString = "https://60fb-216-232-0-203.ngrok-free.app/api"
 #endif
 
 /// A content view that can make HTTP requests to the GreetingService
