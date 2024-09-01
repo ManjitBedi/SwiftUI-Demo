@@ -23,6 +23,13 @@ import SwiftUI
 import OpenAPIRuntime
 import OpenAPIURLSession
 
+#if targetEnvironment(simulator)
+    let urlString = "http://127.0.0.1:8080/api"
+#else
+    // TODO: set to the public IP address or alternate server endpoint
+    let urlString = "http://0.0.0.0:8080/api"
+#endif
+
 /// A content view that can make HTTP requests to the GreetingService
 /// running on localhost to fetch customized greetings.
 ///
@@ -43,7 +50,7 @@ struct OpenApiTestView: View {
         } else {
             // By default, make live network calls.
             self.init(
-                client: Client(serverURL: URL(string: "http://127.0.0.1:8080/api")!, transport: URLSessionTransport())
+                client: Client(serverURL: URL(string: urlString)!, transport: URLSessionTransport())
             )
         }
     }
@@ -62,9 +69,15 @@ struct OpenApiTestView: View {
             Button("Refresh greeting") { Task { await updateGreeting() } }
 
             Divider()
+#if targetEnvironment(simulator)
             Text("To test, the server endpoint needs to be available at [http://127.0.0.1:8080/api](http://127.0.0.1:8080).")
                 .font(.footnote)
                 .frame(maxWidth: .infinity, alignment: .leading)
+#else
+            Text("To test, the server endpoint needs to be available at [\(urlString)](\(urlString)).")
+                .font(.footnote)
+                .frame(maxWidth: .infinity, alignment: .leading)
+#endif
 
             Text("You can use the server code here, it is made with Vapor: [link](https://github.com/apple/swift-openapi-generator/tree/main/Examples/hello-world-vapor-server-example)")
                 .font(.footnote)

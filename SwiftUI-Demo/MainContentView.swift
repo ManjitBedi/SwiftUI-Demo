@@ -22,16 +22,16 @@ struct MainContentView: View {
                     Text("Profile")
                 }
 
-            SettingsView()
-                .tabItem {
-                    Image(systemName: "gear")
-                    Text("Settings")
-                }
-
             OpenApiTestView()
                 .tabItem {
                     Image(systemName: "network")
                     Text("Open API")
+                }
+
+            SettingsView()
+                .tabItem {
+                    Image(systemName: "gear")
+                    Text("Settings")
                 }
         }
     }
