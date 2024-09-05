@@ -11,6 +11,9 @@ Note: there is an issue with the Xcode 16 beta & resolving packages, I needed to
  ### Rive
  
 - the splash scene is using a demo animation made with [Rive](https://www.rive.app)
+- there are 2 layers in the animations
+ - logo - plays once
+ - circles moving along a sine wave - loops
 
 ### Open API generator
 
