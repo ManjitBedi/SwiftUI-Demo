@@ -4,10 +4,17 @@
 //
 //  Created by Manjit Bedi on 2024-08-29.
 //
+// What is the purpose of this view, I am not sure (yet)
 
 import SwiftUI
+import PhotosUI
 
 struct ProfileView: View {
+    @StateObject var vm = PhotoSelectorViewModel()
+    let maxPhotosToSelect = 1
+
+    @State private var avatarItem: PhotosPickerItem?
+
     var body: some View {
         ZStack() {
             GradientView(colors: [.pink, .white])

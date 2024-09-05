@@ -93,11 +93,18 @@ struct OpenApiTestView: View {
                         .symbolEffect(.pulse)
                 }
                 Spacer().frame(height: 10)
-
-                Text(greeting).accessibilityIdentifier("greeting-label")
                 Divider()
+
+                Text(greeting)
+                    .font(.custom("PressStart2P-Regular", size: 12))
+                    .foregroundColor(.red)
+
                 TextField("Name", text: $name)
-                Button("Refresh greeting") { Task { await updateGreeting() } }
+                    .font(.custom("PressStart2P-Regular", size: 12))
+                    .foregroundColor(.orange)
+
+                Divider()
+                Button("Refresh greeting") { Task { await updateGreeting() } }.tint(.orange)
 
                 Divider()
 #if targetEnvironment(simulator)

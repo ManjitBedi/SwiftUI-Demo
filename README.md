@@ -32,3 +32,10 @@ Note: there is an issue with the Xcode 16 beta & resolving packages, I needed to
   - to test on an iOS device, I recommend using [ngrok](https://ngrok.com), this will require setting up a developr account
 
 [Link to vapor code on Github](https://github.com/apple/swift-openapi-generator/tree/main/Examples/hello-world-vapor-server-example)
+
+
+### Reference
+
+[mesh gradient](https://developer.apple.com/documentation/SwiftUI/MeshGradient)
+
+[sf symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/)

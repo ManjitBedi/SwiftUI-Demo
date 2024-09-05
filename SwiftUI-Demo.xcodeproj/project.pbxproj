@@ -30,6 +30,9 @@
 		786903092C839A570032C78D /* HTTPTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 786903082C839A570032C78D /* HTTPTypes */; };
 		7869030B2C839A570032C78D /* HTTPTypesFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 7869030A2C839A570032C78D /* HTTPTypesFoundation */; };
 		7869030E2C839BCD0032C78D /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 7869030D2C839BCD0032C78D /* OpenAPIURLSession */; };
+		78D365782C8A49C9009CAAD9 /* MeshGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D365772C8A49B8009CAAD9 /* MeshGradientView.swift */; };
+		78D3657C2C8A4F6F009CAAD9 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D3657A2C8A4F6B009CAAD9 /* PhotosView.swift */; };
+		78D3657F2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D3657E2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf */; };
 		78E0D0E72C8A33F300EAB919 /* Handjet-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +60,9 @@
 		786902F32C839A2D0032C78D /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		786902F42C839A2D0032C78D /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		78ADFD5D2C83B17E000CC604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		78D365772C8A49B8009CAAD9 /* MeshGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientView.swift; sourceTree = "<group>"; };
+		78D3657A2C8A4F6B009CAAD9 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
+		78D3657E2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PressStart2P-Regular.ttf"; sourceTree = "<group>"; };
 		78E0D0E52C8A33C000EAB919 /* SwiftUI-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-Demo.entitlements"; sourceTree = "<group>"; };
 		78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Handjet-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -102,6 +108,7 @@
 				786902DE2C8399F70032C78D /* Assets */,
 				786902E22C8399F70032C78D /* Model */,
 				786902F42C839A2D0032C78D /* ProfileView.swift */,
+				78D3657A2C8A4F6B009CAAD9 /* PhotosView.swift */,
 				786902F12C839A2D0032C78D /* SettingsView.swift */,
 				786902F32C839A2D0032C78D /* SplashView.swift */,
 				786902F22C839A2D0032C78D /* StyleModifiers.swift */,
@@ -110,6 +117,7 @@
 				786902EB2C839A2D0032C78D /* ApiContentView.swift */,
 				786902ED2C839A2D0032C78D /* CardView.swift */,
 				786902EF2C839A2D0032C78D /* GradientView.swift */,
+				78D365772C8A49B8009CAAD9 /* MeshGradientView.swift */,
 				786902EA2C839A2D0032C78D /* HomeView.swift */,
 				786902E92C839A2D0032C78D /* MainContentView.swift */,
 				780589F92C83A18B00D2CB81 /* OpenApiTestView.swift */,
@@ -139,6 +147,7 @@
 		786902DE2C8399F70032C78D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				78D3657E2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf */,
 				78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */,
 				786902DD2C8399F70032C78D /* logo.riv */,
 			);
@@ -232,6 +241,7 @@
 				786902E52C8399F70032C78D /* logo.riv in Resources */,
 				782FA7962C83972200402D82 /* Assets.xcassets in Resources */,
 				786902E32C8399F70032C78D /* openapi-generator-config.yaml in Resources */,
+				78D3657F2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,8 +252,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78D365782C8A49C9009CAAD9 /* MeshGradientView.swift in Sources */,
 				786902FF2C839A2D0032C78D /* SplashView.swift in Sources */,
 				786902E82C8399F70032C78D /* Model.swift in Sources */,
+				78D3657C2C8A4F6F009CAAD9 /* PhotosView.swift in Sources */,
 				786902F62C839A2D0032C78D /* HomeView.swift in Sources */,
 				780589FA2C83A19800D2CB81 /* OpenApiTestView.swift in Sources */,
 				786902FB2C839A2D0032C78D /* GradientView.swift in Sources */,
