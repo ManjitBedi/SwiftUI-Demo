@@ -25,7 +25,8 @@ struct ProfileView: View {
                         .renderingMode(.template)
                         .resizable()
                         .foregroundColor(.white)
-                        .frame(width: 60, height: 60)
+                        .frame(width: 48, height: 48)
+
                     Text("Profile")
                         .font(.custom( "Handjet-Light", size: 50))
                         .foregroundColor(.white)
@@ -33,9 +34,9 @@ struct ProfileView: View {
 
                     Spacer()
                 }.padding()
-                Spacer()
 
-            }
+                Spacer()
+            }.padding(.leading)
         }
     }
 }

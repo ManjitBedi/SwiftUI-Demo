@@ -77,7 +77,8 @@ struct OpenApiTestView: View {
                         .padding()
 
                     Spacer()
-                }
+                }.padding()
+                
                 Spacer()
 
                 HStack() {
@@ -106,6 +107,9 @@ struct OpenApiTestView: View {
 
                 Divider()
                 Button("Refresh greeting") { Task { await updateGreeting() } }.tint(.orange)
+                    .padding()
+                    .buttonStyle(.borderedProminent)
+                    .font(.system(size: 20))
 
                 Divider()
 #if targetEnvironment(simulator)
@@ -131,8 +135,9 @@ struct OpenApiTestView: View {
                     .font(.footnote)
                     .frame(maxWidth: .infinity, alignment: .leading)
                     .foregroundColor(.indigo)
-            }
-            .padding().buttonStyle(.borderedProminent).font(.system(size: 20))
+
+                Spacer()
+            }.padding(.leading)
         }
     }
 }

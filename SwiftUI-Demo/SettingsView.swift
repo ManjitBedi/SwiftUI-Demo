@@ -13,19 +13,20 @@ struct SettingsView: View {
     var body: some View {
         ZStack() {
             GradientView(colors: [.green, .yellow])
+
             VStack {
                 HStack() {
                     if #available(iOS 18.0, *) {
                         Image(systemName: "gear")
                             .renderingMode(.template)
                             .resizable()
-                            .frame(width: 60 , height: 60 )
+                            .frame(width: 48, height: 48)
                             .symbolEffect(.rotate, options: .speed(0.01))
                     } else {
                         Image(systemName: "gear")
                             .renderingMode(.template)
                             .resizable()
-                            .frame(width: 60 , height: 60 )
+                            .frame(width: 48, height: 48)
                     }
 
                     Text("Settings")
@@ -45,7 +46,7 @@ struct SettingsView: View {
                 ColorPicker("Select your favorite color", selection: $model.favoriteColor)
                     .padding()
                 Spacer()
-            }
+            }.padding(.leading)
         }
     }
 }
