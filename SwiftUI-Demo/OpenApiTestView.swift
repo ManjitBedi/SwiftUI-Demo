@@ -68,10 +68,8 @@ struct OpenApiTestView: View {
             VStack {
                 HStack() {
                     Image(systemName: "wifi")
-                        .symbolRenderingMode(.palette)
                         .resizable()
-                        .frame(width: 50, height: 45)
-                        .symbolEffect(.variableColor)
+                        .frame(width: 46, height: 45)
                     Text("Open API")
                         .font(.custom( "Handjet-Light", size: 50))
                         .foregroundColor(.black)
