@@ -16,13 +16,22 @@ struct SettingsView: View {
             VStack {
 
                 HStack() {
-                    Image(systemName: "gear")
-                        .renderingMode(.template)
-                        .resizable()
-                        .frame(width: 60 , height: 60 )
+                    if #available(iOS 18.0, *) {
+                        Image(systemName: "gear")
+                            .renderingMode(.template)
+                            .resizable()
+                            .frame(width: 60 , height: 60 )
+                            .symbolEffect(.rotate)
+                    } else {
+                        Image(systemName: "gear")
+                            .renderingMode(.template)
+                            .resizable()
+                            .frame(width: 60 , height: 60 )
+                    }
 
                     Text("Settings")
-                        .font(.headline)
+                        .font(.custom( "Handjet-Light", size: 50))
+
 
                     Spacer()
                 }.padding()

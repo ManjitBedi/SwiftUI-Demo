@@ -22,11 +22,11 @@ struct SplashView: View {
             VStack {
                 Spacer().frame(height: 100)
                 Text("The Great Demo app")
-                    .textStyle(.title)
+                    .font(.custom( "Handjet-Light", size: 50))
                     .foregroundColor(.white)
                     .padding()
 
-                Text("The animation is made using [Rive](https://www.rive.app)")
+                Text("Some of the animation are made using [Rive](https://www.rive.app)")
                     .textStyle(.footnote)
                     .foregroundColor(.white)
 
@@ -36,11 +36,22 @@ struct SplashView: View {
                         isShowingSplash = false
                     }
                 } label: {
-                    Image(systemName: "paperplane.circle")
-                        .renderingMode(.template)
-                        .resizable()
-                        .foregroundColor(.white)
-                        .frame(width: 80, height: 90)
+
+                    if #available(iOS 18.0, *) {
+                        Image(systemName: "paperplane.circle")
+                            .renderingMode(.template)
+                            .resizable()
+                            .foregroundColor(.white)
+                            .frame(width: 80, height: 90)
+                            .symbolEffect(.breathe)
+                    } else {
+                        Image(systemName: "paperplane.circle")
+                            .renderingMode(.template)
+                            .resizable()
+                            .foregroundColor(.white)
+                            .frame(width: 80, height: 90)
+                    }
+
                 }
             }
             .padding()

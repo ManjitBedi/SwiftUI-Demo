@@ -8,6 +8,12 @@
 
 Note: there is an issue with the Xcode 16 beta & resolving packages, I needed to create the project in Xcode 15 as a work around.  The project will work in Xcode 16.
  
+ ## UI 
+ 
+ - in a few places, animated sysmbos are being introduced in iOS 17 & new effects have been added with iOS 18
+ 
+ - some custom fonts from [Google fonts](https://fonts.google.com) are being used like [Handjet light](https://fonts.google.com/share?selection.family=Handjet:wght@100..900)
+ 
  ### Rive
  
 * the splash scene is using a demo animation made with [Rive](https://www.rive.app)

@@ -19,7 +19,9 @@ struct HomeView: View {
             GradientView(colors: [.green, .purple])
 
             VStack() {
-                Text("Home")
+                Text("Home View")
+                    .font(.custom( "Handjet-Light", size: 50))
+
                 List(items) { item in
                     CardView(card: item)
                 }.scrollContentBackground(.hidden)

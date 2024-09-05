@@ -20,9 +20,10 @@ struct ProfileView: View {
                         .foregroundColor(.white)
                         .frame(width: 60, height: 60)
                     Text("Profile")
+                        .font(.custom( "Handjet-Light", size: 50))
                         .foregroundColor(.white)
                         .padding()
-                        .font(.title)
+
                     Spacer()
                 }.padding()
                 Spacer()

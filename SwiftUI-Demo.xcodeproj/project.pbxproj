@@ -30,6 +30,7 @@
 		786903092C839A570032C78D /* HTTPTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 786903082C839A570032C78D /* HTTPTypes */; };
 		7869030B2C839A570032C78D /* HTTPTypesFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 7869030A2C839A570032C78D /* HTTPTypesFoundation */; };
 		7869030E2C839BCD0032C78D /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 7869030D2C839BCD0032C78D /* OpenAPIURLSession */; };
+		78E0D0E72C8A33F300EAB919 /* Handjet-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,8 @@
 		786902F32C839A2D0032C78D /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		786902F42C839A2D0032C78D /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		78ADFD5D2C83B17E000CC604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		78E0D0E52C8A33C000EAB919 /* SwiftUI-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-Demo.entitlements"; sourceTree = "<group>"; };
+		78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Handjet-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +96,7 @@
 		782FA7902C83971B00402D82 /* SwiftUI-Demo */ = {
 			isa = PBXGroup;
 			children = (
+				78E0D0E52C8A33C000EAB919 /* SwiftUI-Demo.entitlements */,
 				78ADFD5D2C83B17E000CC604 /* Info.plist */,
 				786902DC2C8399F70032C78D /* API */,
 				786902DE2C8399F70032C78D /* Assets */,
@@ -135,6 +139,7 @@
 		786902DE2C8399F70032C78D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */,
 				786902DD2C8399F70032C78D /* logo.riv */,
 			);
 			path = Assets;
@@ -223,6 +228,7 @@
 			files = (
 				782FA7992C83972200402D82 /* Preview Assets.xcassets in Resources */,
 				786902E42C8399F70032C78D /* openapi.yaml in Resources */,
+				78E0D0E72C8A33F300EAB919 /* Handjet-Light.ttf in Resources */,
 				786902E52C8399F70032C78D /* logo.riv in Resources */,
 				782FA7962C83972200402D82 /* Assets.xcassets in Resources */,
 				786902E32C8399F70032C78D /* openapi-generator-config.yaml in Resources */,
@@ -387,6 +393,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-Demo/SwiftUI-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Demo/Preview Content\"";
@@ -418,6 +425,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "SwiftUI-Demo/SwiftUI-Demo.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 28;
 				DEVELOPMENT_ASSET_PATHS = "\"SwiftUI-Demo/Preview Content\"";
