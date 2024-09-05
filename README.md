@@ -10,10 +10,13 @@ Note: there is an issue with the Xcode 16 beta & resolving packages, I needed to
  
  ### Rive
  
-- the splash scene is using a demo animation made with [Rive](https://www.rive.app)
-- there are 2 layers in the animations
- - logo - plays once
- - circles moving along a sine wave - loops
+* the splash scene is using a demo animation made with [Rive](https://www.rive.app)
+    * there are 2 layers in the animations
+        * logo - plays once
+        * circles moving along a sine wave - loops
+            * the sine wave was created as a separate asset & imported into the Rive project
+ 
+ ![](https://github.com/user-attachments/assets/2e4e4a0f-f33b-4aa9-a373-63f271d94d97)
 
 ### Open API generator
 
