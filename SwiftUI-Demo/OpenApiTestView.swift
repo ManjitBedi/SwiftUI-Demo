@@ -70,13 +70,14 @@ struct OpenApiTestView: View {
                     Image(systemName: "wifi")
                         .resizable()
                         .frame(width: 46, height: 45)
+                    
                     Text("Open API")
                         .font(.custom( "Handjet-Light", size: 50))
                         .foregroundColor(.black)
                         .padding()
 
                     Spacer()
-                }.padding()
+                }
                 Spacer()
 
                 HStack() {
