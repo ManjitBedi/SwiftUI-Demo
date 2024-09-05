@@ -26,7 +26,7 @@ struct SplashView: View {
                     .foregroundColor(.white)
                     .padding()
 
-                Text("The animation is using [Rive](https://www.rive.app)")
+                Text("The animation is made using [Rive](https://www.rive.app)")
                     .textStyle(.footnote)
                     .foregroundColor(.white)
 

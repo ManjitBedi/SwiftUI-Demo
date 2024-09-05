@@ -62,30 +62,44 @@ struct OpenApiTestView: View {
         } catch { greeting = "Error: \(error.localizedDescription)" }
     }
     var body: some View {
-        VStack {
-            Image(systemName: "globe").imageScale(.large)
-            Text(greeting).accessibilityIdentifier("greeting-label")
-            Divider()
-            TextField("Name", text: $name)
-            Button("Refresh greeting") { Task { await updateGreeting() } }
+        ZStack() {
+            GradientView(colors: [.yellow, .white])
 
-            Divider()
+            VStack {
+                Image(systemName: "globe").imageScale(.large)
+                    .symbolEffect(.pulse)
+                Text(greeting).accessibilityIdentifier("greeting-label")
+                Divider()
+                TextField("Name", text: $name)
+                Button("Refresh greeting") { Task { await updateGreeting() } }
+
+                Divider()
 #if targetEnvironment(simulator)
-            Text("To test, the server endpoint needs to be available at [http://127.0.0.1:8080/api](http://127.0.0.1:8080).")
-                .font(.footnote)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                Text("To test, the server endpoint needs to be available at \n [http://127.0.0.1:8080/api](http://127.0.0.1:8080).")
+                    .font(.footnote)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(.indigo)
 #else
-            Text("To test, the server endpoint needs to be available at [\(urlString)](\(urlString)).")
-                .font(.footnote)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                Text("To test, the server endpoint needs to be available at \n [\(urlString)](\(urlString)).")
+                    .font(.footnote)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(.indigo)
 #endif
+                Spacer().frame(height: 10)
 
-            Text("You can use the server code here, it is made with Vapor: [link](https://github.com/apple/swift-openapi-generator/tree/main/Examples/hello-world-vapor-server-example)")
-                .font(.footnote)
-                .frame(maxWidth: .infinity, alignment: .leading)
+                Text("You can use the server code here, it is made with Vapor: [link](https://github.com/apple/swift-openapi-generator/tree/main/Examples/hello-world-vapor-server-example)")
+                    .font(.footnote)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(.indigo)
+                Spacer().frame(height: 10)
 
+                Text("Testing on a device can be done using tools like [Ngrok](https://ngrok.io/).")
+                    .font(.footnote)
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .foregroundColor(.indigo)
+            }
+            .padding().buttonStyle(.borderedProminent).font(.system(size: 20))
         }
-        .padding().buttonStyle(.borderedProminent).font(.system(size: 20))
     }
 }
 
