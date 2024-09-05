@@ -14,14 +14,13 @@ struct SettingsView: View {
         ZStack() {
             GradientView(colors: [.green, .yellow])
             VStack {
-
                 HStack() {
                     if #available(iOS 18.0, *) {
                         Image(systemName: "gear")
                             .renderingMode(.template)
                             .resizable()
                             .frame(width: 60 , height: 60 )
-                            .symbolEffect(.rotate)
+                            .symbolEffect(.rotate, options: .speed(0.01))
                     } else {
                         Image(systemName: "gear")
                             .renderingMode(.template)
@@ -31,7 +30,6 @@ struct SettingsView: View {
 
                     Text("Settings")
                         .font(.custom( "Handjet-Light", size: 50))
-
 
                     Spacer()
                 }.padding()

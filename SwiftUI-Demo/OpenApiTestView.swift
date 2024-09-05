@@ -67,6 +67,21 @@ struct OpenApiTestView: View {
 
             VStack {
                 HStack() {
+                    Image(systemName: "wifi")
+                        .symbolRenderingMode(.palette)
+                        .resizable()
+                        .frame(width: 50, height: 45)
+                        .symbolEffect(.variableColor)
+                    Text("Open API")
+                        .font(.custom( "Handjet-Light", size: 50))
+                        .foregroundColor(.black)
+                        .padding()
+
+                    Spacer()
+                }.padding()
+                Spacer()
+
+                HStack() {
                     Image(systemName: "wifi.router")
                         .imageScale(.large)
                         .symbolEffect(.variableColor)
