@@ -66,8 +66,21 @@ struct OpenApiTestView: View {
             GradientView(colors: [.yellow, .white])
 
             VStack {
-                Image(systemName: "globe").imageScale(.large)
-                    .symbolEffect(.pulse)
+                HStack() {
+                    Image(systemName: "wifi.router")
+                        .imageScale(.large)
+                        .symbolEffect(.variableColor)
+
+                    Image(systemName: "ellipsis")
+                        .imageScale(.large)
+                        .symbolEffect(.variableColor)
+
+                    Image(systemName: "globe")
+                        .imageScale(.large)
+                        .symbolEffect(.pulse)
+                }
+                Spacer().frame(height: 10)
+
                 Text(greeting).accessibilityIdentifier("greeting-label")
                 Divider()
                 TextField("Name", text: $name)
