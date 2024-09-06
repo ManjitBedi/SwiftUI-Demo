@@ -32,20 +32,53 @@ struct QuizView: View {
 struct QuestionView: View {
     let question: QuizQuestion
     let onAnswerSelected: (Int) -> Void
-    let riveViewModel = RiveViewModel(fileName: "quiz-ui")
+    @StateObject private var rvm: RiveViewModel
+
+    init(question: QuizQuestion, onAnswerSelected: @escaping (Int) -> Void) {
+        self.question = question
+        self.onAnswerSelected = onAnswerSelected
+        _rvm = StateObject(wrappedValue: RiveViewModel(fileName: "quiz-ui", artboardName: "QuizArtboard"))
+    }
 
     var body: some View {
 
         VStack(alignment: .leading, spacing: 20) {
 
-            riveViewModel.view()
+            rvm.view()
+                .onAppear(){
+                    DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
+                        setQuizContent()
+                    }
+                }
+            Button("Start") {
+                setQuizContent()
+            }
         }
         .padding()
-        .onAppear(){
 
+    }
+
+    /// Set the text runs in the Rive view model
+    /// Note: the names of the runs need to be exported!
+    func setQuizContent() {
+
+        do {
+            try rvm.setTextRunValue("QuestionRun", textValue: question.question)
+        } catch {
+            print(error)
+        }
+
+        for (index, option) in question.options.enumerated() {
+            let run = "Choice\(index+1)Run"
+            do {
+                try rvm.setTextRunValue(run, textValue: option)
+            } catch {
+                print(error)
+            }
         }
     }
 }
+
 
 #Preview {
     QuizView()
