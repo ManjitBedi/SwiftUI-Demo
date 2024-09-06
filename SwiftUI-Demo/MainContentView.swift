@@ -22,6 +22,12 @@ struct MainContentView: View {
                     Text("Profile")
                 }
 
+            QuizView()
+                .tabItem {
+                    Image(systemName: "questionmark")
+                    Text("Quiz")
+                }
+
             OpenApiTestView()
                 .tabItem {
                     Image(systemName: "network")

@@ -12,6 +12,9 @@
 		782FA7942C83971B00402D82 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 782FA7932C83971B00402D82 /* ContentView.swift */; };
 		782FA7962C83972200402D82 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782FA7952C83972200402D82 /* Assets.xcassets */; };
 		782FA7992C83972200402D82 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 782FA7982C83972200402D82 /* Preview Assets.xcassets */; };
+		784B96242C8B732600C9B48D /* QuizView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B96232C8B732100C9B48D /* QuizView.swift */; };
+		784B96262C8B735B00C9B48D /* QuizDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 784B96252C8B735700C9B48D /* QuizDataModel.swift */; };
+		784B962A2C8B80D800C9B48D /* quiz-ui.riv in Resources */ = {isa = PBXBuildFile; fileRef = 784B96292C8B80D800C9B48D /* quiz-ui.riv */; };
 		786902E32C8399F70032C78D /* openapi-generator-config.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 786902DA2C8399F70032C78D /* openapi-generator-config.yaml */; };
 		786902E42C8399F70032C78D /* openapi.yaml in Resources */ = {isa = PBXBuildFile; fileRef = 786902DB2C8399F70032C78D /* openapi.yaml */; };
 		786902E52C8399F70032C78D /* logo.riv in Resources */ = {isa = PBXBuildFile; fileRef = 786902DD2C8399F70032C78D /* logo.riv */; };
@@ -44,6 +47,9 @@
 		782FA7932C83971B00402D82 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		782FA7952C83972200402D82 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		782FA7982C83972200402D82 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		784B96232C8B732100C9B48D /* QuizView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizView.swift; sourceTree = "<group>"; };
+		784B96252C8B735700C9B48D /* QuizDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuizDataModel.swift; sourceTree = "<group>"; };
+		784B96292C8B80D800C9B48D /* quiz-ui.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = "quiz-ui.riv"; sourceTree = "<group>"; };
 		786902DA2C8399F70032C78D /* openapi-generator-config.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = "openapi-generator-config.yaml"; sourceTree = "<group>"; };
 		786902DB2C8399F70032C78D /* openapi.yaml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = openapi.yaml; sourceTree = "<group>"; };
 		786902DD2C8399F70032C78D /* logo.riv */ = {isa = PBXFileReference; lastKnownFileType = file; path = logo.riv; sourceTree = "<group>"; };
@@ -114,9 +120,11 @@
 				786902F22C839A2D0032C78D /* StyleModifiers.swift */,
 				782FA7912C83971B00402D82 /* SwiftUI_DemoApp.swift */,
 				782FA7932C83971B00402D82 /* ContentView.swift */,
+				784B96232C8B732100C9B48D /* QuizView.swift */,
 				786902EB2C839A2D0032C78D /* ApiContentView.swift */,
 				786902ED2C839A2D0032C78D /* CardView.swift */,
 				786902EF2C839A2D0032C78D /* GradientView.swift */,
+				784B96252C8B735700C9B48D /* QuizDataModel.swift */,
 				78D365772C8A49B8009CAAD9 /* MeshGradientView.swift */,
 				786902EA2C839A2D0032C78D /* HomeView.swift */,
 				786902E92C839A2D0032C78D /* MainContentView.swift */,
@@ -147,6 +155,7 @@
 		786902DE2C8399F70032C78D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				784B96292C8B80D800C9B48D /* quiz-ui.riv */,
 				78D3657E2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf */,
 				78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */,
 				786902DD2C8399F70032C78D /* logo.riv */,
@@ -241,6 +250,7 @@
 				786902E52C8399F70032C78D /* logo.riv in Resources */,
 				782FA7962C83972200402D82 /* Assets.xcassets in Resources */,
 				786902E32C8399F70032C78D /* openapi-generator-config.yaml in Resources */,
+				784B962A2C8B80D800C9B48D /* quiz-ui.riv in Resources */,
 				78D3657F2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -256,6 +266,7 @@
 				786902FF2C839A2D0032C78D /* SplashView.swift in Sources */,
 				786902E82C8399F70032C78D /* Model.swift in Sources */,
 				78D3657C2C8A4F6F009CAAD9 /* PhotosView.swift in Sources */,
+				784B96262C8B735B00C9B48D /* QuizDataModel.swift in Sources */,
 				786902F62C839A2D0032C78D /* HomeView.swift in Sources */,
 				780589FA2C83A19800D2CB81 /* OpenApiTestView.swift in Sources */,
 				786902FB2C839A2D0032C78D /* GradientView.swift in Sources */,
@@ -267,6 +278,7 @@
 				786902F92C839A2D0032C78D /* CardView.swift in Sources */,
 				786902E62C8399F70032C78D /* Card.swift in Sources */,
 				782FA7922C83971B00402D82 /* SwiftUI_DemoApp.swift in Sources */,
+				784B96242C8B732600C9B48D /* QuizView.swift in Sources */,
 				786902F52C839A2D0032C78D /* MainContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
