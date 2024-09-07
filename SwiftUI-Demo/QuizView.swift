@@ -19,7 +19,7 @@ struct QuizView: View {
                     .font(.custom( "Handjet-Light", size: 50))
                     .padding()
                 
-                Text("The quiz is displayed using a project exported from [Rive](https://rive.app/) where the text is updated when the view appears from data in a Quiz view model")
+                Text("The quiz is displayed using a project exported from [Rive](https://rive.app/); the text is updated when the view appears with data in the Quiz view model")
                     .padding()
                 
                 if viewModel.currentQuestionIndex < viewModel.questions.count {
