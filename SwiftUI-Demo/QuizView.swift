@@ -12,18 +12,24 @@ struct QuizView: View {
     @StateObject private var viewModel = QuizViewModel()
 
     var body: some View {
-        VStack {
-            Text("Quiz")
-                .font(.custom( "Handjet-Light", size: 50))
-                .padding()
-
-            if viewModel.currentQuestionIndex < viewModel.questions.count {
-                QuestionView(question: viewModel.questions[viewModel.currentQuestionIndex],
-                             onAnswerSelected: { index in
-                                 viewModel.checkAnswer(index)
-                             })
-            } else {
-                Text("Quiz completed! Your score: \(viewModel.score)/\(viewModel.questions.count)")
+        ZStack() {
+            GradientView(colors: [.orange, .white])
+            VStack {
+                Text("Quiz - WIP")
+                    .font(.custom( "Handjet-Light", size: 50))
+                    .padding()
+                
+                Text("The quiz is displayed using a project exported from [Rive](https://rive.app/) where the text is updated when the view appears from data in a Quiz view model")
+                    .padding()
+                
+                if viewModel.currentQuestionIndex < viewModel.questions.count {
+                    QuestionView(question: viewModel.questions[viewModel.currentQuestionIndex],
+                                 onAnswerSelected: { index in
+                        viewModel.checkAnswer(index)
+                    })
+                } else {
+                    Text("Quiz completed! Your score: \(viewModel.score)/\(viewModel.questions.count)")
+                }
             }
         }
     }
@@ -41,25 +47,19 @@ struct QuestionView: View {
     }
 
     var body: some View {
-
         VStack(alignment: .leading, spacing: 20) {
-
             rvm.view()
                 .onAppear(){
                     DispatchQueue.main.asyncAfter(deadline: .now() + 0.1) {
                         setQuizContent()
                     }
                 }
-            Button("Start") {
-                setQuizContent()
-            }
         }
         .padding()
-
     }
 
     /// Set the text runs in the Rive view model
-    /// Note: the names of the runs need to be exported!
+    /// Note: the names of the runs need to be flagged as exportin the Rive IDE before exporting a project file!
     func setQuizContent() {
 
         do {
