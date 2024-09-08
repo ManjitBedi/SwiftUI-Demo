@@ -7,6 +7,7 @@
 
 import SwiftUI
 import RiveRuntime
+import ConfettiSwiftUI
 
 struct QuizView: View {
     @StateObject private var viewModel = QuizViewModel()
@@ -42,6 +43,9 @@ struct QuestionView: View {
     @State private var correct = ""
     @StateObject private var rvm = RiveEventsVM()
 
+    // changing the value will start a confetti animation
+    @State private var triggerCounter: Int = 0
+
     init(question: QuizQuestion, onAnswerSelected: @escaping (Int) -> Void) {
         self.question = question
         self.onAnswerSelected = onAnswerSelected
@@ -60,14 +64,21 @@ struct QuestionView: View {
             processEventName(newValue)
         }
         .padding()
+        .confettiCannon(counter: $triggerCounter)
     }
 
     private func processEventName(_ name: String) {
          // Process the event name here
         if name == "SubmitEvent" {
-            correct = question.correctAnswerIndex == choice ?
-            "Correct!" : "Incorrect"
-
+            if question.correctAnswerIndex == choice {
+                correct = "Correct!"
+                // This starts the confetti animation
+                triggerCounter += 1
+                AudioManager.playDingDingSound()
+            } else {
+                correct = "Incorrect"
+                AudioManager.playBuzzerSound()
+            }
         } else if name == "Choice1Event"{
             choice = 0
         } else if name == "Choice2Event"{

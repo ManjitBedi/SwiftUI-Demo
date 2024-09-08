@@ -33,6 +33,10 @@
 		786903092C839A570032C78D /* HTTPTypes in Frameworks */ = {isa = PBXBuildFile; productRef = 786903082C839A570032C78D /* HTTPTypes */; };
 		7869030B2C839A570032C78D /* HTTPTypesFoundation in Frameworks */ = {isa = PBXBuildFile; productRef = 7869030A2C839A570032C78D /* HTTPTypesFoundation */; };
 		7869030E2C839BCD0032C78D /* OpenAPIURLSession in Frameworks */ = {isa = PBXBuildFile; productRef = 7869030D2C839BCD0032C78D /* OpenAPIURLSession */; };
+		78A7598F2C8E1A6A0050FE78 /* ConfettiSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 78A7598E2C8E1A6A0050FE78 /* ConfettiSwiftUI */; };
+		78A759922C8E1F0D0050FE78 /* AudioManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78A759912C8E1F090050FE78 /* AudioManager.swift */; };
+		78A759952C8E23050050FE78 /* bbc_buzzer.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78A759942C8E23050050FE78 /* bbc_buzzer.mp3 */; };
+		78A7599A2C8E28450050FE78 /* ding-ding.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 78A759992C8E28450050FE78 /* ding-ding.mp3 */; };
 		78D365782C8A49C9009CAAD9 /* MeshGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D365772C8A49B8009CAAD9 /* MeshGradientView.swift */; };
 		78D3657C2C8A4F6F009CAAD9 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D3657A2C8A4F6B009CAAD9 /* PhotosView.swift */; };
 		78D3657F2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D3657E2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf */; };
@@ -65,6 +69,9 @@
 		786902F22C839A2D0032C78D /* StyleModifiers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleModifiers.swift; sourceTree = "<group>"; };
 		786902F32C839A2D0032C78D /* SplashView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashView.swift; sourceTree = "<group>"; };
 		786902F42C839A2D0032C78D /* ProfileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		78A759912C8E1F090050FE78 /* AudioManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioManager.swift; sourceTree = "<group>"; };
+		78A759942C8E23050050FE78 /* bbc_buzzer.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = bbc_buzzer.mp3; sourceTree = "<group>"; };
+		78A759992C8E28450050FE78 /* ding-ding.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "ding-ding.mp3"; sourceTree = "<group>"; };
 		78ADFD5D2C83B17E000CC604 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		78D365772C8A49B8009CAAD9 /* MeshGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshGradientView.swift; sourceTree = "<group>"; };
 		78D3657A2C8A4F6B009CAAD9 /* PhotosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotosView.swift; sourceTree = "<group>"; };
@@ -78,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A7598F2C8E1A6A0050FE78 /* ConfettiSwiftUI in Frameworks */,
 				7869030E2C839BCD0032C78D /* OpenAPIURLSession in Frameworks */,
 				786903092C839A570032C78D /* HTTPTypes in Frameworks */,
 				786903032C839A3B0032C78D /* RiveRuntime in Frameworks */,
@@ -114,6 +122,7 @@
 				786902DE2C8399F70032C78D /* Assets */,
 				786902E22C8399F70032C78D /* Model */,
 				786902F42C839A2D0032C78D /* ProfileView.swift */,
+				78A759912C8E1F090050FE78 /* AudioManager.swift */,
 				78D3657A2C8A4F6B009CAAD9 /* PhotosView.swift */,
 				786902F12C839A2D0032C78D /* SettingsView.swift */,
 				786902F32C839A2D0032C78D /* SplashView.swift */,
@@ -155,6 +164,8 @@
 		786902DE2C8399F70032C78D /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				78A759992C8E28450050FE78 /* ding-ding.mp3 */,
+				78A759942C8E23050050FE78 /* bbc_buzzer.mp3 */,
 				784B96292C8B80D800C9B48D /* quiz-ui.riv */,
 				78D3657E2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf */,
 				78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */,
@@ -195,6 +206,7 @@
 				786903082C839A570032C78D /* HTTPTypes */,
 				7869030A2C839A570032C78D /* HTTPTypesFoundation */,
 				7869030D2C839BCD0032C78D /* OpenAPIURLSession */,
+				78A7598E2C8E1A6A0050FE78 /* ConfettiSwiftUI */,
 			);
 			productName = "SwiftUI-Demo";
 			productReference = 782FA78E2C83971B00402D82 /* SwiftUI-Demo.app */;
@@ -229,6 +241,7 @@
 				786903042C839A500032C78D /* XCRemoteSwiftPackageReference "swift-openapi-generator" */,
 				786903072C839A570032C78D /* XCRemoteSwiftPackageReference "swift-http-types" */,
 				7869030C2C839BCD0032C78D /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
+				78A7598D2C8E1A6A0050FE78 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
 			);
 			productRefGroup = 782FA78F2C83971B00402D82 /* Products */;
 			projectDirPath = "";
@@ -244,7 +257,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				78A7599A2C8E28450050FE78 /* ding-ding.mp3 in Resources */,
 				782FA7992C83972200402D82 /* Preview Assets.xcassets in Resources */,
+				78A759952C8E23050050FE78 /* bbc_buzzer.mp3 in Resources */,
 				786902E42C8399F70032C78D /* openapi.yaml in Resources */,
 				78E0D0E72C8A33F300EAB919 /* Handjet-Light.ttf in Resources */,
 				786902E52C8399F70032C78D /* logo.riv in Resources */,
@@ -264,6 +279,7 @@
 			files = (
 				78D365782C8A49C9009CAAD9 /* MeshGradientView.swift in Sources */,
 				786902FF2C839A2D0032C78D /* SplashView.swift in Sources */,
+				78A759922C8E1F0D0050FE78 /* AudioManager.swift in Sources */,
 				786902E82C8399F70032C78D /* Model.swift in Sources */,
 				78D3657C2C8A4F6F009CAAD9 /* PhotosView.swift in Sources */,
 				784B96262C8B735B00C9B48D /* QuizDataModel.swift in Sources */,
@@ -532,6 +548,14 @@
 				minimumVersion = 1.0.2;
 			};
 		};
+		78A7598D2C8E1A6A0050FE78 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/simibac/ConfettiSwiftUI.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.1.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -559,6 +583,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 7869030C2C839BCD0032C78D /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */;
 			productName = OpenAPIURLSession;
+		};
+		78A7598E2C8E1A6A0050FE78 /* ConfettiSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 78A7598D2C8E1A6A0050FE78 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
+			productName = ConfettiSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
