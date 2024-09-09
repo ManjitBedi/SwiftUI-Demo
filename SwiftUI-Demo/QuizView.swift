@@ -14,7 +14,7 @@ struct QuizView: View {
 
     var body: some View {
         ZStack() {
-            GradientView(colors: [.orange, .white])
+            GradientView(colors: [.green, .white])
             VStack {
                 Text("Quiz - WIP")
                     .font(.custom( "Handjet-Light", size: 50))
@@ -57,13 +57,18 @@ struct QuestionView: View {
                 .onAppear(){
                     setQuizContent()
                 }
-            Text("Event Name: \(rvm.eventName)")
-            Text(correct)
+
+            HStack() {
+                Text("Event Name: \(rvm.eventName)")
+                    .padding(.leading)
+                    .font(.footnote)
+                Text(correct)
+                    .padding(.leading)
+            }
         }
         .onChange(of: rvm.eventName) { value, newValue in
             processEventName(newValue)
         }
-        .padding()
         .confettiCannon(counter: $triggerCounter)
     }
 
@@ -122,21 +127,12 @@ class RiveEventsVM: RiveViewModel {
     @objc func onRiveEventReceived(onRiveEvent riveEvent: RiveEvent) {
         print("Rive event \(riveEvent.name())")
         eventName = riveEvent.name()
-        if let openUrlEvent = riveEvent as? RiveOpenUrlEvent {
-            if let url = URL(string: openUrlEvent.url()) {
-                #if os(iOS)
-                UIApplication.shared.open(url)
-                #else
-                NSWorkspace.shared.open(url)
-                #endif
-            }
-        } else if let generalEvent = riveEvent as? RiveGeneralEvent {
+        if let generalEvent = riveEvent as? RiveGeneralEvent {
             let genEventProperties = generalEvent.properties();
             if let msg = genEventProperties["message"] {
                 eventText = msg as! String
             }
         }
-
     }
 }
 

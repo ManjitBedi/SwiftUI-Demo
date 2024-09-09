@@ -51,6 +51,8 @@ Note: there is an issue with the Xcode 16 beta & resolving packages, I needed to
 
 bbc.co.uk – © copyright 2024 BBC
 
+* vector art for question marks [Nouri Atchabao on Vecteezy](https://www.vecteezy.com/members/norasfedd)
+
 ## Reference
 
 [mesh gradient](https://developer.apple.com/documentation/SwiftUI/MeshGradient)
