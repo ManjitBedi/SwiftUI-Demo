@@ -35,6 +35,8 @@ struct ProfileView: View {
                     Spacer()
                 }.padding()
 
+                Text("TODO: add some content: mesh gradient, timeline view for animation etc.")
+
                 Spacer()
             }.padding(.leading)
         }
