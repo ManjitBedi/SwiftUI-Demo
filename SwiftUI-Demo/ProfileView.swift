@@ -17,9 +17,11 @@ struct ProfileView: View {
 
     var body: some View {
         ZStack() {
-            GradientView(colors: [.pink, .white])
+            AnimatedMeshView()
+            MeshGradientImageView()
 
             VStack() {
+                Spacer().frame(height: 30)
                 HStack() {
                     Image(systemName: "person.crop.circle")
                         .renderingMode(.template)
@@ -35,11 +37,9 @@ struct ProfileView: View {
                     Spacer()
                 }.padding()
 
-                Text("TODO: add some content: mesh gradient, timeline view for animation etc.")
-
                 Spacer()
             }.padding(.leading)
-        }
+        }.ignoresSafeArea()
     }
 }
 
