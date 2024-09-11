@@ -10,15 +10,14 @@ import SwiftUI
 import PhotosUI
 
 struct ProfileView: View {
-    @StateObject var vm = PhotoSelectorViewModel()
-    let maxPhotosToSelect = 1
-
-    @State private var avatarItem: PhotosPickerItem?
-
     var body: some View {
         ZStack() {
-            AnimatedMeshView()
-            MeshGradientImageView()
+            if #available(iOS 18.0, *) {
+                AnimatedMeshView()
+                MeshGradientImageView()
+            } else {
+                GradientView(colors: [.yellow, .orange])
+            }
 
             VStack() {
                 Spacer().frame(height: 30)

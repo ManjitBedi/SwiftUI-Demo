@@ -13,7 +13,7 @@ struct AnimatedMeshView: View {
     var body: some View {
         if #available(iOS 18.0, *) {
             TimelineView(.animation) { timeline in
-                let x = (cos(timeline.date.timeIntervalSince1970) + 1) / 2
+                let x = (cos(timeline.date.timeIntervalSince1970)  + 1) / 2
 
                 MeshGradient(width: 3, height: 3, points: [
                     [0, 0], [0.5, 0], [1, 0],
@@ -26,7 +26,8 @@ struct AnimatedMeshView: View {
                 ])
             }
         } else {
-            EmptyView()
+            Text("This content view requires iOS 18.0 or later.")
+                .background(GradientView(colors: [.yellow, .orange]))
         }
     }
 }
@@ -46,7 +47,8 @@ struct MeshGradientImageView: View {
                     ])
                 )
         } else {
-            EmptyView()
+            Text("This content view requires iOS 18.0 or later.")
+                .background(GradientView(colors: [.yellow, .orange]))
         }
     }
 }

@@ -1,5 +1,7 @@
 # SwiftUI Demo
  a place for hacking with Swift & SwiftUI
+ 
+ * some of the content views are iOS 18 only
 
 ![](https://github.com/user-attachments/assets/ec5fc2a4-287f-4c4a-aaf7-b4a40fdccb3e)
 
