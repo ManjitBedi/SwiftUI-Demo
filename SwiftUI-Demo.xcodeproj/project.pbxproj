@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -41,6 +41,8 @@
 		78D3657C2C8A4F6F009CAAD9 /* PhotosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D3657A2C8A4F6B009CAAD9 /* PhotosView.swift */; };
 		78D3657F2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78D3657E2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf */; };
 		78E0D0E72C8A33F300EAB919 /* Handjet-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */; };
+		78F7D4DB2C935BA70032518C /* RealityComposerAssets in Frameworks */ = {isa = PBXBuildFile; productRef = 78F7D4DA2C935BA70032518C /* RealityComposerAssets */; };
+		78F7D4DD2C935D1B0032518C /* AnimatedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78F7D4DC2C935CE30032518C /* AnimatedView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -78,6 +80,7 @@
 		78D3657E2C8A51BD009CAAD9 /* PressStart2P-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "PressStart2P-Regular.ttf"; sourceTree = "<group>"; };
 		78E0D0E52C8A33C000EAB919 /* SwiftUI-Demo.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "SwiftUI-Demo.entitlements"; sourceTree = "<group>"; };
 		78E0D0E62C8A33F300EAB919 /* Handjet-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Handjet-Light.ttf"; sourceTree = "<group>"; };
+		78F7D4DC2C935CE30032518C /* AnimatedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +90,7 @@
 			files = (
 				78A7598F2C8E1A6A0050FE78 /* ConfettiSwiftUI in Frameworks */,
 				7869030E2C839BCD0032C78D /* OpenAPIURLSession in Frameworks */,
+				78F7D4DB2C935BA70032518C /* RealityComposerAssets in Frameworks */,
 				786903092C839A570032C78D /* HTTPTypes in Frameworks */,
 				786903032C839A3B0032C78D /* RiveRuntime in Frameworks */,
 				7869030B2C839A570032C78D /* HTTPTypesFoundation in Frameworks */,
@@ -122,6 +126,7 @@
 				786902DE2C8399F70032C78D /* Assets */,
 				786902E22C8399F70032C78D /* Model */,
 				786902F42C839A2D0032C78D /* ProfileView.swift */,
+				78F7D4DC2C935CE30032518C /* AnimatedView.swift */,
 				78A759912C8E1F090050FE78 /* AudioManager.swift */,
 				78D3657A2C8A4F6B009CAAD9 /* PhotosView.swift */,
 				786902F12C839A2D0032C78D /* SettingsView.swift */,
@@ -207,6 +212,7 @@
 				7869030A2C839A570032C78D /* HTTPTypesFoundation */,
 				7869030D2C839BCD0032C78D /* OpenAPIURLSession */,
 				78A7598E2C8E1A6A0050FE78 /* ConfettiSwiftUI */,
+				78F7D4DA2C935BA70032518C /* RealityComposerAssets */,
 			);
 			productName = "SwiftUI-Demo";
 			productReference = 782FA78E2C83971B00402D82 /* SwiftUI-Demo.app */;
@@ -242,6 +248,7 @@
 				786903072C839A570032C78D /* XCRemoteSwiftPackageReference "swift-http-types" */,
 				7869030C2C839BCD0032C78D /* XCRemoteSwiftPackageReference "swift-openapi-urlsession" */,
 				78A7598D2C8E1A6A0050FE78 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */,
+				78F7D4D92C935BA70032518C /* XCLocalSwiftPackageReference "SwiftUI-Demo/Packages/RealityComposerAssets" */,
 			);
 			productRefGroup = 782FA78F2C83971B00402D82 /* Products */;
 			projectDirPath = "";
@@ -284,6 +291,7 @@
 				78D3657C2C8A4F6F009CAAD9 /* PhotosView.swift in Sources */,
 				784B96262C8B735B00C9B48D /* QuizDataModel.swift in Sources */,
 				786902F62C839A2D0032C78D /* HomeView.swift in Sources */,
+				78F7D4DD2C935D1B0032518C /* AnimatedView.swift in Sources */,
 				780589FA2C83A19800D2CB81 /* OpenApiTestView.swift in Sources */,
 				786902FB2C839A2D0032C78D /* GradientView.swift in Sources */,
 				786902FE2C839A2D0032C78D /* StyleModifiers.swift in Sources */,
@@ -455,6 +463,9 @@
 				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noorg.SwiftUI-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -488,6 +499,9 @@
 				MARKETING_VERSION = 1.0.10;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.noorg.SwiftUI-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -516,6 +530,13 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		78F7D4D92C935BA70032518C /* XCLocalSwiftPackageReference "SwiftUI-Demo/Packages/RealityComposerAssets" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = "SwiftUI-Demo/Packages/RealityComposerAssets";
+		};
+/* End XCLocalSwiftPackageReference section */
 
 /* Begin XCRemoteSwiftPackageReference section */
 		786903012C839A3B0032C78D /* XCRemoteSwiftPackageReference "rive-ios" */ = {
@@ -590,6 +611,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 78A7598D2C8E1A6A0050FE78 /* XCRemoteSwiftPackageReference "ConfettiSwiftUI" */;
 			productName = ConfettiSwiftUI;
+		};
+		78F7D4DA2C935BA70032518C /* RealityComposerAssets */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = RealityComposerAssets;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
